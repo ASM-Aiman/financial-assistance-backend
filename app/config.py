@@ -4,7 +4,8 @@ from functools import lru_cache
 
 class Settings(BaseSettings):
     # Database
-    DATABASE_URL: str = "postgresql://user:password@localhost/finance_db"
+    DATABASE_URL: str
+
     
     # Pinecone
     PINECONE_API_KEY: str
